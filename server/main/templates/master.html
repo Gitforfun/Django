@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"><img src="img/logo2.png" alt="logo"></div>
+            <ul class="menu">
+                <li><a href="/">Главная</a></li>
+                <li><a href="/catalog/">Каталог</a></li>
+                <li><a href="/contacts/">Контакты</a></li>
+            </ul>
+
+        </div>
+        <div class="h1">
+            <h1>Магазин для смартфономанов и смартфономанок</h1>
+        </div>
+        <div class="content">
+            <p> <span><b>Приветствуем Вас в&nbsp;нашем магазине!</b></span>
+                <br> Если Вы&nbsp;имеете много лишних денег, которые хотите выбросить на&nbsp;ветер, и&nbsp;Вы готовы, вместо покупки нормального телефона менее чем за&nbsp;5&nbsp;тыс. руб., приобрести игрушки за&nbsp;бешеные деньги, которые уже через год устареют, если вообще доживут, то&nbsp;Вы&nbsp;попали туда, куда надо! Поздравляем!
+                <!-- Текст оттипован в артЛебеде -->
+            </p>
+            <p>
+                Еще добавим текста: <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eligendi perspiciatis eaque nobis error sed, temporibus maxime consectetur dolorem mollitia beatae facere, nihil reiciendis expedita? Rerum repellendus sapiente iusto accusantium.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eligendi perspiciatis eaque nobis error sed, temporibus maxime consectetur dolorem mollitia beatae facere, nihil reiciendis expedita? Rerum repellendus sapiente iusto accusantium.
+            </p>
+
+            {{description}}
+            {% for itm in contacts %}
+                <li>
+                    <span>
+                        {{itm}}
+                    </span>
+                </li>
+            {% endfor %}
+
+        </div>
+
+        {% block page_content %}
+
+        {% endblock %}
+
+        <div class="footer">
+            <hr>
+            <p> &copy;&nbsp;Все права защищены. </p>
+        </div>
+    </div>
+</body>
+
+
+</html>
