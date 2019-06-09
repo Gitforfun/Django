@@ -1,0 +1,298 @@
+body {
+    background: #f8f8f8;
+}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 80px;
+
+}
+
+
+/*============= logo =============*/
+
+.logo {
+    height: 80px;
+    width: 80px;
+    margin-top: 15px;
+    margin-left: 100px;
+    float: left;
+}
+
+
+/*========== menu ===========*/
+
+.menu {
+    border-radius: 5px 5px;
+    height: 80px;
+    float: right;
+}
+
+.menu li {
+    display: inline-block;
+    list-style-type: none;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    text-indent: auto;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    background-color: #A9A9A9;
+    border-radius: 5px 5px;
+}
+
+.menu a:hover {
+    border-radius: 5px 5px;
+    background-color: #696969;
+    color: white;
+}
+
+.menu li a:active {
+    border-radius: 5px 5px;
+    background-color: black;
+    color: white;
+}
+
+
+/* =========== h1==============*/
+
+.h1 {
+    clear: both
+}
+
+h1 {
+    text-align: center;
+    font-size: 34px;
+    font-family: cursive, sans-serif;
+    font-weight: 400;
+}
+
+
+/*============контент============*/
+
+.content {
+    font-family: cursive, sans-serif;
+    font-weight: 400;
+}
+
+.content p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.content p:first-letter,
+.full_descript:first-letter {
+    font-size: 28px;
+    color: dimgrey;
+}
+
+
+/*============== ==============*/
+
+h3 {
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+    background: #eaeaea;
+}
+
+.content_goods {
+    width: 675px;
+    margin: 0 auto;
+}
+
+.content_goods div {
+    height: 205px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 215px;
+    float: left;
+}
+
+.catalog_good_p {
+    width: 485px;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.sort_descript {}
+
+.descript {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.list li {
+    width: 350px;
+    height: 20px;
+    padding-left: 36px;
+    background: url(img/marker.png) no-repeat left 50%;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.img_good {
+    width: 204px;
+    height: 349px;
+    outline: 1px solid grey;
+    float: left;
+    margin-top: 25px;
+}
+
+.img_good:hover {
+    outline: none;
+}
+
+.tabl_good {
+    width: 496px;
+    float: right;
+    overflow: hidden;
+}
+/*======= кнопка ======*/
+
+.bottom {
+    margin-top: 10px;
+    float: left;
+    clear: both;
+}
+
+input[type="submit"] {
+    width: 204px;
+}
+
+input[type="submit"]:hover {
+    outline: 1px solid darkgray;
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    cursor: pointer;
+    outline: 1px solid black;
+}
+
+.sort_descript {
+    overflow: hidden;
+    width: 494px;
+    margin-top: 10px;
+    color: #707070;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.sort_descript p {
+    text-align: center;
+
+
+}
+
+.full_descript {
+    clear: both;
+}
+
+/* ======== contact ========*/
+
+.map {
+    width: 400px;
+    height: 200px;
+    float: left;
+    padding-top: 10px;
+}
+
+.adress {
+    width: 280px;
+    height: 200px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.route {
+    height: 80px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+/* ======== form ========*/
+
+fieldset {
+    border-radius: 10px;
+    width: 672px;
+    padding: 10px
+}
+
+input,
+textarea {
+    width: 662px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+input[type="email"]:focus {
+    color: darkgreen;
+    background-color: #eefbdb;
+}
+
+
+/* ============= table ==================*/
+
+.general_char {}
+
+.general_char tr:first-child {
+    height: 50px;
+}
+
+.general_char td {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted #000;
+}
+
+
+/* ============= footer ==================*/
+
+.footer {
+    background: #ccc;
+    height: 80px;
+    clear: both;
+    text-align: right;
+    clear: both;
+    /*margin left и right убрал. Некрасиво с ними.*/
+}
+
+.footer p {
+    margin-right: 20px;
+}
